@@ -9,7 +9,7 @@ import os
 # Initialise Flask App
 app = Flask(__name__)
 
-# database connection 
+# database connection
 server = 'devops-project-server.database.windows.net'
 database = 'orders-db'
 username = 'maya'
@@ -87,7 +87,8 @@ def add_order():
     product_quantity = request.form.get('product_quantity')
     order_date = request.form.get('order_date')
     shipping_date = request.form.get('shipping_date')
-    
+
+
     # Create a session to interact with the database
     session = Session()
 
